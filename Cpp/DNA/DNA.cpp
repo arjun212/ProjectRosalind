@@ -17,15 +17,16 @@ int main() {
 		while (std::getline(dataFile, lineString)) {
 			dataString += lineString; //cache and update until end-of-file in case data spans multiple lines
 		}
+
+		std::cout << "Counts for "
+			<< "A: " << std::to_string(std::count(dataString.begin(), dataString.end(), 'A')) //std::count returns int
+			<< ", T: " << std::to_string(std::count(dataString.begin(), dataString.end(), 'T'))
+			<< ", C: " << std::to_string(std::count(dataString.begin(), dataString.end(), 'C'))
+			<< ", G: " << std::to_string(std::count(dataString.begin(), dataString.end(), 'G'))
+			<< std::endl;
+
 	}
-	else { std::cout << "Couldn't find Rosalind Data .txt" << std::endl; } 
-	
-	std::cout << "Counts for " 
-		<<   "A: " << std::to_string(std::count(dataString.begin(), dataString.end(), 'A')) //std::count returns int
-		<< ", T: " << std::to_string(std::count(dataString.begin(), dataString.end(), 'T'))
-		<< ", C: " << std::to_string(std::count(dataString.begin(), dataString.end(), 'C'))
-		<< ", G: " << std::to_string(std::count(dataString.begin(), dataString.end(), 'G'))
-		<< std::endl;
+	else { std::cout << "Couldn't find Rosalind Data .txt" << std::endl; }	
 
 	std::cout << "Press any key to exit" << std::endl;
 	std::getchar();
