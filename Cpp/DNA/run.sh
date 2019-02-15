@@ -1,3 +1,2 @@
-/bin/bash
 
-make && ./main
+make && ./main.tsk

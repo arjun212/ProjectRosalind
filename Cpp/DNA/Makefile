@@ -5,7 +5,7 @@ CC_FLAGS = -w -I../utils
 
 
 # File names
-EXEC = main
+EXEC = main.tsk
 HEADER = ../utils/utils.h
 SOURCES = $(wildcard *.cpp ../utils/*.cpp)
 OBJECTS = $(SOURCES:.cpp=.o)
