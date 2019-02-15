@@ -27,10 +27,10 @@ int main()
     {
         switch( c )
         {
-            case 'A' : ++result[ A ]; break;
-            case 'C' : ++result[ C ]; break;
-            case 'G' : ++result[ G ]; break;
-            case 'T' : ++result[ T ]; break;
+            case 'A' : ++result[ A ] ; break ;
+            case 'C' : ++result[ C ] ; break ;
+            case 'G' : ++result[ G ] ; break ;
+            case 'T' : ++result[ T ] ; break ;
         }
 
     }
