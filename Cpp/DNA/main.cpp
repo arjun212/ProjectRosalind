@@ -17,7 +17,7 @@ enum CHAR_INDEX
 
 int main()
 {
-    std::vector<std::string> test( Utils::ReadFile( "./data" )) ;
+    std::vector< std::string > test( Utils::ReadFile( "./data" ) ) ;
     
 
     std::string DNA = test.at( 0 ) ;
