@@ -19,7 +19,6 @@ int main()
 {
     std::vector< std::string > test( Utils::ReadFile( "./data" ) ) ;
     
-
     std::string DNA = test.at( 0 ) ;
 
     std::array< int, COUNT > result = { 0, 0, 0, 0 } ;
