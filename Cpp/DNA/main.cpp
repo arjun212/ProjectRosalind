@@ -17,9 +17,8 @@ enum CHAR_INDEX
 
 int main()
 {
-    std::vector<std::string> test( Utils::ReadFile( "./data" )) ;
+    std::vector< std::string > test( Utils::ReadFile( "./data" ) ) ;
     
-
     std::string DNA = test.at( 0 ) ;
 
     std::array< int, COUNT > result = { 0, 0, 0, 0 } ;
@@ -28,10 +27,10 @@ int main()
     {
         switch( c )
         {
-            case 'A' : ++result[ A ]; break;
-            case 'C' : ++result[ C ]; break;
-            case 'G' : ++result[ G ]; break;
-            case 'T' : ++result[ T ]; break;
+            case 'A' : ++result[ A ] ; break ;
+            case 'C' : ++result[ C ] ; break ;
+            case 'G' : ++result[ G ] ; break ;
+            case 'T' : ++result[ T ] ; break ;
         }
 
     }
