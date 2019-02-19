@@ -32,7 +32,6 @@ int main()
             case 'G' : ++result[ G ] ; break ;
             case 'T' : ++result[ T ] ; break ;
         }
-
     }
     
     for( int count : result )
@@ -40,5 +39,5 @@ int main()
     
     std::cout << "\n" ;
 
-	return 0;
+    return 0;
 }
