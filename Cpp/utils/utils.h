@@ -11,10 +11,11 @@ namespace Utils
 
 
 
-    std::vector< std::string > ReadFile( std::string filename ) ;
+    std::vector< std::string > ReadFile( const std::string & filename     ,
+                                               int           reserve  = 0 ) ;
     
 
-    std::vector< int > SplitIntString( std::string line ) ;
+    std::vector< int > SplitIntString( const std::string & line ) ;
 
 
 

@@ -10,11 +10,14 @@
 namespace Utils
 {
 
-    std::vector< std::string > ReadFile( std::string filename )
+    std::vector< std::string > ReadFile( const std::string & filename ,
+                                               int           reserve  )
     {
         std::ifstream file( filename ) ;
 
         std::vector< std::string > output ;
+        if( reserve != 0 )
+            output.reserve( reserve ) ;
 
         std::string lineBuffer ;
 
@@ -28,7 +31,7 @@ namespace Utils
 
 
 
-    std::vector< int > SplitIntString( std::string line )
+    std::vector< int > SplitIntString( const std::string & line )
     {
         std::istringstream iss ( line ) ;
 
