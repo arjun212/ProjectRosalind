@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
-
+#include <sstream>
 
 namespace Utils
 {
@@ -25,6 +25,24 @@ namespace Utils
 
         return output ;
     }
+
+
+
+    std::vector< int > SplitIntString( std::string line )
+    {
+        std::istringstream iss ( line ) ;
+
+        std::vector< int > result ;
+
+        int n ;
+        while( iss >> n )
+        {
+            result.push_back( n ) ;
+        }
+
+        return result ;
+    }
+
 
 } // namespace Utils
 

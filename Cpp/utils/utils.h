@@ -12,6 +12,9 @@ namespace Utils
 
 
     std::vector< std::string > ReadFile( std::string filename ) ;
+    
+
+    std::vector< int > SplitIntString( std::string line ) ;
 
 
 
