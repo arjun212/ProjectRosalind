@@ -6,9 +6,9 @@
 
 
 static std::unordered_map< char, char > REVERSE( { { 'A', 'T' } ,
-                                                 { 'T', 'A' } ,
-                                                 { 'C', 'G' } ,
-                                                 { 'G', 'C' } } ) ;
+                                                   { 'T', 'A' } ,
+                                                   { 'C', 'G' } ,
+                                                   { 'G', 'C' } } ) ;
 
 int main()
 {
